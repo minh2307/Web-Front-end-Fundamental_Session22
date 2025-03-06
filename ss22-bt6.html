@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = [2, 5, 7, 4, 1, 8, 6, 2, 5, 7];
+        let number = +prompt("mời bạn nhập vào một số nguyên bất kỳ");
+        let count = 0;
+        for (let value of array) {
+            if (number === value) {
+                count++;
+            }
+        }
+        if (count === 0) {
+            alert(` số ${number} không tồn tại trong mảng`);
+        } else {
+            alert(`số ${number} xuất hiện ${count} lần trong mảng`);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = prompt("Mời bạn nhập một dẫy số bất kỳ: ");
+        let array = n.split("");
+        let max = array[0];
+        for (let index in array) {
+            if (isNaN(array[index])) {
+                document.write("dãy không hợp lệ");
+                break;
+            }
+            else if (max < array[index]) {
+                max = array[index];
+
+
+            }
+        }
+        console.log(max);
+
+    </script>
+</body>
+
+</html>

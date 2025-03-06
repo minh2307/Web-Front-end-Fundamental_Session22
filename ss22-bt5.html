@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let number = prompt("mời bạn nhập vào dẫy số ")
+        let array = number.split("").join("");
+        let odd = 0, even = 0;
+        for (let value of array) {
+            if (isNaN(value)) {
+                document.write("dãy không hợp lệ");
+                break;
+            }
+            if (value % 2 === 0) {
+                even += Number(value);
+            } else {
+                odd += Number(value);
+            }
+        }
+        console.log(`tổng số chẵn: ${even}`);
+        console.log(`tổng số odd: ${odd}`);
+    </script>
+</body>
+
+</html>
